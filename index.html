@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./index.js" defer></script>
+  <title>Conversor de Bases</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="container-information">
+
+      <div class="result">
+        <input id="result" type="text" disabled />
+        <button id="copyBtn" class="copy-btn">copy</button>
+      </div>
+
+
+    </div>
+    <div class="container-configs">
+     
+      
+      <h1>Conversor </h1>
+      <div class="container-configs-fromto">
+        <h3>CONVERTE DE:</h3>
+        <select name="numberFrom" id="numberFrom">
+          <option value="decimal">(d)decimal</option>
+          <option value="binario">(b)binario</option>
+          <option disabled value="octal">(o)octal</option>
+          <option value="hexadecimal">(h)hexadecimal</option>
+
+
+        </select>
+        <h3>PARA:</h3>
+        <select name="numberFor" id="numberFor">
+          <option value="decimal">(d)decimal</option>
+          <option value="binario">(b)binario</option>
+          <option disabled value="octal">(o)octal</option>
+          <option value="hexadecimal">(h)hexadecimal</option>
+        </select>
+        <label for="numberFor">NÚMERO</label>
+        <input id="number" type="text" />
+      </div>
+
+      <button id="calculate">CALCULAR</button>
+      <h2 class="historyH2">Histórico</h2>
+
+      <section id="historys" class="history">
+
+      </section>
+
+    </div>
+
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

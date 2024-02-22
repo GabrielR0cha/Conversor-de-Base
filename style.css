@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #237e18;
+
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-configs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 500px;
+  height: 80%;
+  width: 40%;
+  margin-bottom:0.5rem;
+  border-radius: 10px;
+}
+
+.container-configs h1 {
+  padding: 40px;
+}
+
+.container-configs-fromto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container-configs-fromto h3 {
+  padding: 10px;
+}
+
+.container-configs-fromto select {
+  outline: none;
+  width: 80%;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+.container-configs-fromto label {
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.container-configs-fromto input {
+  outline: none;
+  width: 80%;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.container-configs button {
+  padding: 10px;
+  background-color: #237e18;
+  border-radius: 10px;
+  border-color: transparent;
+  width: 50%;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0 20px 0;
+}
+
+.container-configs button:hover {
+  background-color: #2ab51b;
+  transition: 0.5s;
+}
+
+
+.container-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 500px;
+  width: 40%;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.como-funciona {
+  margin-bottom: 1rem;
+}
+
+.about {
+  display: none;
+  position: absolute;
+  height: 30rem;
+  width: 25rem;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+
+.about >div, h2, ul{
+  padding: 1rem 1rem 0.5rem  1rem;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.result input {
+  width: 70%;
+  height: 60%;
+  margin: 15px 0px;
+  padding: 20px;
+  background-color: #237e18;
+  border-radius: 5px;
+  color: white;
+  text-align: right;
+  font-size: x-large;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.history {
+  width: 80%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+  max-height: 10rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Largura da barra de rolagem */
+}
+
+.historyH2  {
+  border-top: 1px solid #237e18;
+  padding: 5px 10px;
+  text-align: center;
+  width: 80%;
+  margin-bottom:0.5rem ;
+
+}
+
+
+
+.results {
+  overflow: scroll;
+max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 60px;
+  height: 60px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px 0;
+  max-height: 50%;
+}
+.results > p{
+padding: 0 0.5rem;
+white-space: nowrap;
+}
+
+.copy-btn {
+  width: 15%;
+  height: 60%;
+  padding: 5px;
+  background-color: #237e18;
+  color: white;
+  border-color: transparent;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.copy-btn:hover {
+  background-color: #2ab51b;
+  transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-configs {
+  
+    margin-top: 0.5rem;
+    height: auto;
+    width: 85%;
+  }
+
+  .container-information {
+  
+    width: 85%;
+  }
+
+}
+@media (max-width: 500px) {
+  .result {
+    display: flex;
+    flex-direction: column;
+  }
+  .result > input {
+    width: 80%
+  }
+
+  .copy-btn {
+    width: 80%;
+    margin: 0 0 0.5rem 0;
+
+  }
+ 
+  .container {
+    height: auto;
+  }
+
+  .about {
+    position: absolute;
+    height: 30rem;
+    width: 15rem;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 5px 0;
+
+  }
+  .about > h2 {
+    padding: 0.2rem 0.5rem ;
+font-size: medium;
+  }
+
+  .about >div, ul{
+    padding: 0.5rem;
+  }
+  
+
+}
